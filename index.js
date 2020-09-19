@@ -1,26 +1,15 @@
 const cards = document.querySelectorAll(".card")
-const botonBlanco = document.querySelector("#filtro-color-blanco")
-const botonNegro = document.querySelector("#filtro-color-negro")
+const botonesFiltro = document.querySelectorAll(".filtro-boton")
 
-
-botonBlanco.onclick = () => {
-    for (let card of cards){
-        if (card.dataset.color === "blanco"){
-           card.classList.remove(`hidden`)
-        }
-        else{
-            card.classList.add(`hidden`)
-        }
-    }
-}
-
-botonNegro.onclick = () => {
-    for (let card of cards){
-        if (card.dataset.color === "negro"){
-            card.classList.remove(`hidden`)
-        }
-        else{
-            card.classList.add(`hidden`)
-        }
+for (let boton of botonesFiltro) {
+    boton.onclick = () =>{
+       for (let card of cards){
+           if (boton.dataset.color === card.dataset.color){
+               card.classList.remove (`hidden`)
+           }
+           else {
+               card.classList.add (`hidden`)
+           }
+       }
     }
 }
