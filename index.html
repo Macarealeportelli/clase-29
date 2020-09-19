@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container" >
+
+        <div class="card" data-nombre="artilugia" data-sexo="h" data-color="tricolor">
+            <img src="http://www.placekitten.com/200">
+            <div class="title">
+                <h4>Artilugia</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="boris" data-sexo="m" data-color="blanco">
+            <img src="http://www.placekitten.com/300">
+            <div class="title">
+                <h4>Boris</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="pippin" data-sexo="h" data-color="negro">
+            <img src="http://www.placekitten.com/400">
+            <div class="title">
+                <h4>Pippin</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="pepo" data-sexo="m" data-color="tricolor">
+            <img src="http://www.placekitten.com/500">
+            <div class="title">
+                <h4>Pepo</h4>
+            </div>
+        </div>
+
+    </div>
+
+   
+        <label for="nombre"><input type="text"> Nombre </label>
+        <label for="colores"> Colores
+            <button data-color="blanco" id="filtro-color-blanco">Blanco</button>
+            <button data-color="negro">Negro</button>
+            <button data-color="tricolor">Tricolor</button>
+        </label>
+
+        <label for="sexo">Sexo</label>
+        <input type="radio"> Hembra
+        <input type="radio"> Macho
+        <input type="radio"> Indistinto
+        </label>
+   
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
