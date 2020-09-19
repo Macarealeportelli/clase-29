@@ -21,3 +21,7 @@
   .title {
     padding: 2px 16px;
   }
+
+  .hidden {
+    display: none;
+  }
