@@ -21,7 +21,11 @@
   .title {
     padding: 2px 16px;
   }
-
+  
+  .titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
   .hidden {
     display: none;
   }
